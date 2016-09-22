@@ -57,5 +57,4 @@ node_modules
 .tmp
 app.yaml
 dist
-*.jpg
-*.png
+jquery-ui
