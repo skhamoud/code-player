@@ -1,13 +1,12 @@
 {
-  "name": "project",
+  "name": "CodePlayer",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": " a very simple basic html , css developping environment. like codepen just way more basic ",
+  "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Hamoud Khatar",
   "devDependencies": {
     "browser-sync": "^2.13.0",
     "gulp": "^3.9.1",

@@ -27,10 +27,11 @@ a, a:hover, a:focus, a:visited, a:active {
   text-decoration: none;
 }
 
-.vert-align{
+.vert-align {
   display: flex;
   align-items: center;
 }
+
 textarea {
   outline:none;
 }
@@ -41,7 +42,7 @@ textarea {
   margin: 0;
   width: 100%;
   height: 100vh;
-  background:  linear-gradient(to bottom right, rgba(41, 83, 83, 0.5), rgba(41, 83, 83, 0.5)), url("../img/flowers.jpg") no-repeat center  ;
+  background:  linear-gradient(to bottom right, rgba(41, 83, 83, 0.5), rgba(41, 83, 83, 0.5)), url("../img/swing.jpg") no-repeat center  ;
   background-size: cover;
   color: $white;
 }
@@ -68,15 +69,15 @@ textarea {
     height: 20em;
     padding: 20px 20px ;
     margin: 40px auto 15px;
-    color:#616161;
+    color:$black;
     border-radius: 10px;
     text-align: center;
-    border: 0.2px solid $darker-red;
+    box-shadow: 0px 0px 1px 0px;
     p {
       margin-top: 5rem;
     }
     &:hover {
-      transform: scale(1.05,1.1);
+      box-shadow: 10px 10px 60px 2px #454545;
       transition: all .2s ease-in;
     }
   }
