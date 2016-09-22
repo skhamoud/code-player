@@ -1,147 +1,132 @@
 @import "variables";
-
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
-body{
+body {
     margin: 0;
-    font-family: 'lato', 'titillium web',
-     'open sans', sans-serif;
-    color:$black;
+    font-family: 'lato', 'titillium web', 'open sans', sans-serif;
+    color: $black;
     font-size: 16px;
 }
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     font-family: 'titillium web',cursive,sans-serif;
     cursor: default;
     text-align: justify;
-    text-justify: distribute ;
+    text-justify: distribute;
 }
-p, h4 {
-  cursor: default;
-  text-align: justify;
-  text-justify: distribute ;
+h4,
+p {
+    cursor: default;
+    text-align: justify;
+    text-justify: distribute;
 }
-a, a:hover, a:focus, a:visited, a:active {
-  color: inherit;
-  background: inherit;
-  text-decoration: none;
+a,
+a:active,
+a:focus,
+a:hover,
+a:visited {
+    color: inherit;
+    background: inherit;
+    text-decoration: none;
 }
-
 .vert-align {
-  display: flex;
-  align-items: center;
+    display: flex;
+    align-items: center;
 }
-
 textarea {
-  outline:none;
+    outline: none;
 }
-
 /*=====HEADER====================*/
-
-.page-header{
-  margin: 0;
-  width: 100%;
-  height: 100vh;
-  background:  linear-gradient(to bottom right, rgba(41, 83, 83, 0.5), rgba(41, 83, 83, 0.5)), url("../img/swing.jpg") no-repeat center  ;
-  background-size: cover;
-  color: $white;
+.page-header {
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to bottom right, rgba(0, 30, 30, 0.2), rgba(15, 10, 25, .9)), url("../img/swing.jpg") no-repeat center;
+    background-size: cover;
+    color: $white;
 }
-.page-header h1  {
-  color : $white;
-}
-.page-header p {
-  font-size:  1.3em;
+.header-text {
+    margin-top: 40vh;
+    h1 {
+        color: $white;
+    }
+    p {
+        font-size: 1.3em;
+    }
 }
 /*--------END HEADER-------/>*/
-
-
 //============== FEATURES=================
-
-
-.features{
-  /*background-color: rgb(7, 96, 99);*/
-  padding-bottom: 30px;
-  .features-title {
-    margin-top: 60px;
-  }
-  .ft-card {
-    max-width: 100%;
-    height: 20em;
-    padding: 20px 20px ;
-    margin: 40px auto 15px;
-    color:$black;
-    border-radius: 10px;
-    text-align: center;
-    box-shadow: 0px 0px 1px 0px;
-    p {
-      margin-top: 5rem;
+.features {
+    /*background-color: rgb(7, 96, 99);*/
+    padding-bottom: 30px;
+    .features-title {
+        margin-top: 60px;
     }
-    &:hover {
-      box-shadow: 10px 10px 60px 2px #454545;
-      transition: all .2s ease-in;
+    .ft-card {
+        max-width: 100%;
+        height: 20em;
+        padding: 20px;
+        margin: 40px auto 15px;
+        color: $black;
+        border-radius: 10px;
+        text-align: center;
+        box-shadow: 0 0 1px 0;
+        p {
+            margin-top: 5rem;
+        }
+        &:hover {
+            box-shadow: 10px 10px 60px 2px #454545;
+            transition: all 0.2s ease-in;
+        }
     }
-  }
-  .ft-card-img {
-    height: 42%;
-  }
-
+    .ft-card-img {
+        height: 42%;
+    }
 }
-
-
-
-
 /* Animate.css manipulation */
 .animated {
-  -webkit-animation-duration: 3s;
-  animation-duration: 3s;
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
 }
-
 .CTA {
-  display: block;
-  margin: 40px auto;
-  border: 2px solid #ff364b;
-  border-radius: 20px;
-  color:#756b6c;
+    display: block;
+    margin: 40px auto;
+    border: 2px solid #ff364b;
+    border-radius: 20px;
+    color: #756b6c;
 }
-
 i {
-  margin-left: 10px;
-  position : relative;
-  top: 2px;
-  color: #f59e93;
-  }
-
-.cta-btn   {
-  display: block;
-  padding: 5px 30px;
-  margin: 40px auto;
-  border-radius: 3rem;
-  font-size:3rem;
-  background:transparent;
-  color:$red;
-  border: 2px solid $red;
-  i{color:$red;}
-  // a{color:$red;}
-  &:hover,:focus, :visited, :active{
-    color:$darker-red;
-    border: 2px solid $darker-red;
-    background:transparent !important;
-    i {
-      margin-left:20px;
-      color:$darker-red;
-      transition: all .2s ease-in-out;
-    }
-  }
+    margin-left: 10px;
+    position: relative;
+    top: 2px;
+    color: #f59e93;
 }
-
-
-
-
-
-
-
-
-
-
-
+.cta-btn {
+    display: block;
+    padding: 2px 15px;
+    margin: 40px auto;
+    border-radius: 15px;
+    font-size: 3rem;
+    background: transparent;
+    color: $green;
+    border: 2px solid $green;
+    i {
+        color: inherit;
+    }
+    a {
+        color: inherit;
+    }
+    &:hover,
+    :active,
+    :focus,
+    :visited {
+        outline: none;
+        i {
+            margin-left: 20px;
+            transition: all 0.2s ease-in-out;
+        }
+    }
+}
 //

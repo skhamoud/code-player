@@ -3,22 +3,29 @@
 
 body {
   margin: 0;
-  font-family: 'lato', 'titillium web', 'open sans', sans-serif;
+  font-family: 'lato', 'titillium web', 'open sans', sans-serif;
   color: #1d1919;
   font-size: 16px; }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   font-family: 'titillium web',cursive,sans-serif;
   cursor: default;
   text-align: justify;
   text-justify: distribute; }
 
-p, h4 {
+h4,
+p {
   cursor: default;
   text-align: justify;
   text-justify: distribute; }
 
-a, a:hover, a:focus, a:visited, a:active {
+a,
+a:active,
+a:focus,
+a:hover,
+a:visited {
   color: inherit;
   background: inherit;
   text-decoration: none; }
@@ -39,16 +46,17 @@ textarea {
   margin: 0;
   width: 100%;
   height: 100vh;
-  background: -webkit-linear-gradient(top left, rgba(41, 83, 83, 0.5), rgba(41, 83, 83, 0.5)), url("../img/swing.jpg") no-repeat center;
-  background: linear-gradient(to bottom right, rgba(41, 83, 83, 0.5), rgba(41, 83, 83, 0.5)), url("../img/swing.jpg") no-repeat center;
+  background: -webkit-linear-gradient(top left, rgba(0, 30, 30, 0.2), rgba(15, 10, 25, 0.9)), url("../img/swing.jpg") no-repeat center;
+  background: linear-gradient(to bottom right, rgba(0, 30, 30, 0.2), rgba(15, 10, 25, 0.9)), url("../img/swing.jpg") no-repeat center;
   background-size: cover;
   color: #e9e9e9; }
 
-.page-header h1 {
-  color: #e9e9e9; }
-
-.page-header p {
-  font-size: 1.3em; }
+.header-text {
+  margin-top: 40vh; }
+  .header-text h1 {
+    color: #e9e9e9; }
+  .header-text p {
+    font-size: 1.3em; }
 
 /*--------END HEADER-------/>*/
 .features {
@@ -59,18 +67,18 @@ textarea {
   .features .ft-card {
     max-width: 100%;
     height: 20em;
-    padding: 20px 20px;
+    padding: 20px;
     margin: 40px auto 15px;
     color: #1d1919;
     border-radius: 10px;
     text-align: center;
-    box-shadow: 0px 0px 1px 0px; }
+    box-shadow: 0 0 1px 0; }
     .features .ft-card p {
       margin-top: 5rem; }
     .features .ft-card:hover {
       box-shadow: 10px 10px 60px 2px #454545;
-      -webkit-transition: all .2s ease-in;
-      transition: all .2s ease-in; }
+      -webkit-transition: all 0.2s ease-in;
+      transition: all 0.2s ease-in; }
   .features .ft-card-img {
     height: 42%; }
 
@@ -94,24 +102,29 @@ i {
 
 .cta-btn {
   display: block;
-  padding: 5px 30px;
+  padding: 2px 15px;
   margin: 40px auto;
-  border-radius: 3rem;
+  border-radius: 15px;
   font-size: 3rem;
   background: transparent;
-  color: #ff8024;
-  border: 2px solid #ff8024; }
+  color: #8BC34A;
+  border: 2px solid #8BC34A; }
   .cta-btn i {
-    color: #ff8024; }
-  .cta-btn:hover, .cta-btn :focus, .cta-btn :visited, .cta-btn :active {
-    color: #ec6b0d;
-    border: 2px solid #ec6b0d;
-    background: transparent !important; }
-    .cta-btn:hover i, .cta-btn :focus i, .cta-btn :visited i, .cta-btn :active i {
+    color: inherit; }
+  .cta-btn a {
+    color: inherit; }
+  .cta-btn:hover,
+  .cta-btn :active,
+  .cta-btn :focus,
+  .cta-btn :visited {
+    outline: none; }
+    .cta-btn:hover i,
+    .cta-btn :active i,
+    .cta-btn :focus i,
+    .cta-btn :visited i {
       margin-left: 20px;
-      color: #ec6b0d;
-      -webkit-transition: all .2s ease-in-out;
-      transition: all .2s ease-in-out; }
+      -webkit-transition: all 0.2s ease-in-out;
+      transition: all 0.2s ease-in-out; }
 
 /* Extra small devices (phones, less than 768px) */
 /* No media query since this is the default in Bootstrap */
