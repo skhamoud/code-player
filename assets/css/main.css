@@ -12,8 +12,7 @@ h2,
 h3 {
   font-family: 'titillium web',cursive,sans-serif;
   cursor: default;
-  text-align: justify;
-  text-justify: distribute; }
+  text-align: justify; }
 
 h4,
 p {
@@ -41,77 +40,99 @@ a:visited {
 textarea {
   outline: none; }
 
+.section-title {
+  position: relative;
+  display: block;
+  margin-bottom: 50px; }
+  .section-title::before {
+    content: '';
+    border-bottom: 3px solid #3cc8d1;
+    width: 20%;
+    position: absolute;
+    bottom: -50px;
+    right: 40%; }
+
+/*==========Color classes==========*/
+.green {
+  color: #8BC34A; }
+
+.darker-red {
+  color: #ec6b0d; }
+
+.red {
+  color: #ff8024; }
+
+.blue {
+  color: #368ce6; }
+
+.cyan {
+  color: #3cc8d1; }
+
 /*=====HEADER====================*/
 .page-header {
   margin: 0;
   width: 100%;
   height: 100vh;
-  background: -webkit-linear-gradient(top left, rgba(0, 30, 30, 0.2), rgba(15, 10, 25, 0.9)), url("../img/swing.jpg") no-repeat center;
-  background: linear-gradient(to bottom right, rgba(0, 30, 30, 0.2), rgba(15, 10, 25, 0.9)), url("../img/swing.jpg") no-repeat center;
+  background: -webkit-linear-gradient(top left, rgba(48, 54, 102, 0.9), #3e1152), url("../img/swing.jpg") no-repeat center;
+  background: linear-gradient(to bottom right, rgba(48, 54, 102, 0.9), #3e1152), url("../img/swing.jpg") no-repeat center;
   background-size: cover;
   color: #e9e9e9; }
 
 .header-text {
-  margin-top: 40vh; }
+  margin-top: 40vh;
+  max-width: 65%; }
   .header-text h1 {
     color: #e9e9e9; }
   .header-text p {
-    font-size: 1.3em; }
+    font-size: 1.6rem; }
 
 /*--------END HEADER-------/>*/
 .features {
-  /*background-color: rgb(7, 96, 99);*/
-  padding-bottom: 30px; }
-  .features .features-title {
-    margin-top: 60px; }
+  padding-bottom: 30px;
+  padding-top: 40px; }
   .features .ft-card {
     max-width: 100%;
     height: 20em;
+    max-height: 25em;
     padding: 20px;
     margin: 40px auto 15px;
     color: #1d1919;
     border-radius: 10px;
-    text-align: center;
-    box-shadow: 0 0 1px 0; }
+    text-align: center; }
     .features .ft-card p {
       margin-top: 5rem; }
     .features .ft-card:hover {
       box-shadow: 10px 10px 60px 2px #454545;
       -webkit-transition: all 0.2s ease-in;
       transition: all 0.2s ease-in; }
-  .features .ft-card-img {
-    height: 42%; }
+  .features .ft-card-img:before {
+    display: block;
+    border: 0.05em solid;
+    border-radius: 50%;
+    padding: 0.3em;
+    font-size: 5rem;
+    color: inherit; }
 
 /* Animate.css manipulation */
 .animated {
   -webkit-animation-duration: 3s;
   animation-duration: 3s; }
 
-.CTA {
-  display: block;
-  margin: 40px auto;
-  border: 2px solid #ff364b;
-  border-radius: 20px;
-  color: #756b6c; }
-
-i {
-  margin-left: 10px;
-  position: relative;
-  top: 2px;
-  color: #f59e93; }
-
 .cta-btn {
   display: block;
   padding: 2px 15px;
-  margin: 40px auto;
+  margin: 60px auto;
   border-radius: 15px;
   font-size: 3rem;
   background: transparent;
-  color: #8BC34A;
-  border: 2px solid #8BC34A; }
-  .cta-btn i {
-    color: inherit; }
+  color: #ff8024;
+  border: 2px solid #ff8024; }
   .cta-btn a {
+    color: inherit; }
+  .cta-btn i {
+    margin-left: 10px;
+    position: relative;
+    top: 2px;
     color: inherit; }
   .cta-btn:hover,
   .cta-btn :active,
@@ -129,31 +150,27 @@ i {
 /* Extra small devices (phones, less than 768px) */
 /* No media query since this is the default in Bootstrap */
 /* Small devices (tablets, 768px and up) */
-@media (min-width: 768px) and (max-width: 991px) {
-  .page-header h1 {
-    font-size: 3.5em; }
-  .page-header p {
-    font-size: 1.5em; }
-  .ft-card {
-    height: 24em; } }
+@media (min-width: 768px) {
+  .header-text {
+    max-width: 50%; }
+    .header-text p {
+      font-size: 1.7rem; }
+  .features .ft-card {
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 20px;
+    height: 22em;
+    box-shadow: 0 0 1px 0; }
+  .section-title::before {
+    width: 10%;
+    left: 45%; } }
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-  body {
-    font-size: 16px; }
-  .page-header h1 {
-    font-size: 4em; }
-  .page-header p {
-    font-size: 1.6em; }
-  .container {
-    padding-right: 10%;
-    padding-left: 10%; } }
+  .header-text {
+    max-width: 40%; }
+  .features .ft-card {
+    height: 20em; } }
 
 /* Large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
-  body {
-    font-size: 15px; }
-  h3 {
-    font-size: 2em; } }
-
 /*--------------  END MEDIA QUERIES  -----------------*/

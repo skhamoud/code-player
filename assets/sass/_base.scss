@@ -14,7 +14,6 @@ h3 {
     font-family: 'titillium web',cursive,sans-serif;
     cursor: default;
     text-align: justify;
-    text-justify: distribute;
 }
 h4,
 p {
@@ -38,41 +37,59 @@ a:visited {
 textarea {
     outline: none;
 }
+.section-title {
+    position: relative;
+    display: block;
+    margin-bottom: 50px;
+    &::before {
+        content: '';
+        border-bottom: 3px solid $cyan;
+        width: 20%;
+        position: absolute;
+        bottom: -50px;
+        right: 40%;
+    }
+}
+/*==========Color classes==========*/
+.green{color:$green;}
+.darker-red{color: $darker-red;}
+.red{color:$red;}
+.blue{color:$blue;}
+.cyan {color:$cyan;}
 /*=====HEADER====================*/
 .page-header {
     margin: 0;
     width: 100%;
     height: 100vh;
-    background: linear-gradient(to bottom right, rgba(0, 30, 30, 0.2), rgba(15, 10, 25, .9)), url("../img/swing.jpg") no-repeat center;
+    background: linear-gradient(to bottom right, rgba(48, 54, 102, 0.9), rgba(62, 17, 82, 1)), url("../img/swing.jpg") no-repeat center;
     background-size: cover;
     color: $white;
 }
 .header-text {
     margin-top: 40vh;
+    max-width: 65%;
     h1 {
         color: $white;
     }
     p {
-        font-size: 1.3em;
+        font-size: 1.6rem;
     }
 }
 /*--------END HEADER-------/>*/
 //============== FEATURES=================
 .features {
-    /*background-color: rgb(7, 96, 99);*/
+
     padding-bottom: 30px;
-    .features-title {
-        margin-top: 60px;
-    }
+    padding-top: 40px;
     .ft-card {
         max-width: 100%;
         height: 20em;
+        max-height: 25em;
         padding: 20px;
         margin: 40px auto 15px;
         color: $black;
         border-radius: 10px;
         text-align: center;
-        box-shadow: 0 0 1px 0;
         p {
             margin-top: 5rem;
         }
@@ -81,8 +98,15 @@ textarea {
             transition: all 0.2s ease-in;
         }
     }
-    .ft-card-img {
-        height: 42%;
+    .ft-card-img:before {
+        // content property is defined
+        // from fontawesome icon;
+        display: block;
+        border: 0.05em solid;
+        border-radius: 50%;
+        padding: 0.3em;
+        font-size: 5rem;
+        color: inherit;
     }
 }
 /* Animate.css manipulation */
@@ -90,32 +114,22 @@ textarea {
     -webkit-animation-duration: 3s;
     animation-duration: 3s;
 }
-.CTA {
-    display: block;
-    margin: 40px auto;
-    border: 2px solid #ff364b;
-    border-radius: 20px;
-    color: #756b6c;
-}
-i {
-    margin-left: 10px;
-    position: relative;
-    top: 2px;
-    color: #f59e93;
-}
 .cta-btn {
     display: block;
     padding: 2px 15px;
-    margin: 40px auto;
+    margin: 60px auto;
     border-radius: 15px;
     font-size: 3rem;
     background: transparent;
-    color: $green;
-    border: 2px solid $green;
-    i {
+    color: $red;
+    border: 2px solid $red;
+    a {
         color: inherit;
     }
-    a {
+    i {
+        margin-left: 10px;
+        position: relative;
+        top: 2px;
         color: inherit;
     }
     &:hover,
