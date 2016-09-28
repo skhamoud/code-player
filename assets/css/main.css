@@ -73,8 +73,8 @@ textarea {
   margin: 0;
   width: 100%;
   height: 100vh;
-  background: -webkit-linear-gradient(top left, rgba(48, 54, 102, 0.9), #3e1152), url("../img/swing.jpg") no-repeat center;
-  background: linear-gradient(to bottom right, rgba(48, 54, 102, 0.9), #3e1152), url("../img/swing.jpg") no-repeat center;
+  background: -webkit-linear-gradient(top left, rgba(48, 54, 102, 0.9), #3e1152), url("../img/bg.jpg") no-repeat center;
+  background: linear-gradient(to bottom right, rgba(48, 54, 102, 0.9), #3e1152), url("../img/bg.jpg") no-repeat center;
   background-size: cover;
   color: #e9e9e9; }
 
