@@ -1,0 +1,45 @@
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .navbar .navbar-collapse {
+        display: inline-block !important;
+        /* SO that the Action button is visible, block display by dft*/
+        margin: 0 28vw;
+    }
+    .navbar {
+      .run-btn{
+          left:auto;
+          right: 2% ;
+      }
+    }
+
+    .toggling-row {
+        display: flex;
+        /*justify-content: space-between;*/
+    }
+    .toggling-row .code-container {
+        flex: 1 0 0;
+    }
+    .code-container {
+        height: 90vh !important;
+    }
+    .break-line {
+        visibility: hidden;
+    }
+}
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .toggling-row {
+        display: flex;
+        justify-content: space-between;
+    }
+    .toggling-row .code-container {
+        flex: 1 0 0;
+    }
+    .code-container {
+        height: 90vh !important;
+    }
+}
+/* Large devices (large desktops, 1200px and up) */
+/*@media (min-width: @screen-lg-min) { ... }*/
+/*--------------  END MEDIA QUERIES  -----------------*/

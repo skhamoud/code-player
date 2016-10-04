@@ -1,0 +1,112 @@
+/*--------------  START NAVBAR  ------------------------*/
+.navbar {
+    // background: $gray;
+    .logo {
+        font-size: 1.1em;
+        padding: 15px 10px;
+    }
+    .btn{
+      color : $black;
+      padding-top: .6em;
+      padding-bottom: .6em;
+      line-height: normal;
+    }
+    .run-btn {
+        background: $darker-red;
+        border-radius: 2px;
+        border: 2px solid inherit;
+        position: absolute;
+        left: 45%;
+        color: $white;
+        &:hover {
+          background: $red;
+        }
+    }
+    .toggle-btn {
+        border: 2px solid $cyan;
+        border-radius: 3px;
+        span {
+            background: $cyan;
+        }
+    }
+
+    &-nav {
+      .lang-btn{
+        // color: white;
+        border-color:  $cyan;
+        margin-left: 20px;
+        border-radius: 2px;
+        &:hover,&:focus,&:active{
+          background: none;
+          outline: none;
+        }
+        &:hover{color :$cyan;}
+      }
+    }
+    .active {
+      //     -webkit-box-shadow: inset 0 3px 5px rgba(0,200,0,.125);
+          box-shadow:  0 0 1px 1px $black;
+      //     background-color: white;
+      //     box-sizing: border-box;
+      //     border-bottom: 2px solid #81C784;
+      //     font-style: italic;
+      //     color: inherit;
+    }
+}
+
+
+
+section.container-fluid {
+    padding: 0;
+}
+
+.code-wrapper.row {
+    margin-right: 0;
+    margin-left: 0;
+}
+/*-----------------END NAVIGATION-----------------*/
+/*-----------------START CONTAINERS BODY -----------------*/
+#cssLangContainer,
+#jsLangContainer {
+    display: none;
+}
+h4 {
+    margin-top: 2px;
+}
+#code .row {
+    padding-left: 0;
+    padding-right: 0;
+    margin-right: 0;
+    margin-left: 0;
+}
+.code-container {
+    height: 75vh;
+    border-right: 1px solid;
+    position: relative;
+}
+.code-container-header {
+    text-align: center;
+    padding: 2px 2px 2px 5px;
+    font-size: 1.3em;
+    border: 1px solid #3E2723;
+    border-radius: 3px;
+}
+iframe,
+textarea {
+    padding-left: 5px;
+    color: #2E7D32;
+    border: none;
+    resize: none;
+    width: 100%;
+    height: 92%;
+    font-size: 120%;
+    font-family: 'titillium web', 'open sans', sans-serif;
+}
+.code-box-container {
+    height: 100%;
+}
+.code-container[class^="col"] {
+    padding-right: 5px;
+    padding-left: 5px;
+}
+/*-----------------END BODY-----------------*/
