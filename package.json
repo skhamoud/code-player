@@ -1,5 +1,5 @@
 {
-  "name": "CodePlayer",
+  "name": "code-player",
   "version": "1.0.0",
   "description": " a very simple basic html , css developping environment. like codepen just way more basic ",
   "main": "index.html",
@@ -8,9 +8,14 @@
   },
   "author": "Hamoud Khatar",
   "devDependencies": {
+    "animate.css": "^3.5.2",
+    "bootstrap": "^3.3.7",
     "browser-sync": "^2.13.0",
+    "font-awesome": "^4.7.0",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^3.1.0",
-    "gulp-sass": "^2.3.2"
+    "gulp-sass": "^2.3.2",
+    "jquery": "^3.1.1",
+    "merge-stream": "^1.0.1"
   }
 }
