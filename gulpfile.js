@@ -56,7 +56,7 @@ gulp.task('serve', ['styles'] , function() {
 // watches files and manually reloads after  files change
 gulp.task('watch', function () {
   gulp.watch(src.sass + "*", ['styles']);
-  gulp.watch(public + '*.html').on('change', browserSync.reload);
+  gulp.watch('public/*.html').on('change', browserSync.reload);
   gulp.watch(public.js + 'main.js').on('change', browserSync.reload);
 });
 
